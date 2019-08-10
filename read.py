@@ -12,6 +12,16 @@ sum_len = 0
 for d in data:
 	sum_len += len(d) #sum_len = sum_len +len(d)
 print('平均每筆留言字數為', sum_len / len(data), '字。')
+#篩選：
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+		
+print('總共有', len(new), '筆資料字數小於100')
+print(new[0])
+print('-----------')
+print(new[21740])
 
 
 
